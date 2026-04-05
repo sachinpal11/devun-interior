@@ -144,14 +144,14 @@ const PortfolioSection = () => {
               </div>
 
               {/* Ghost Number - Absolute Position with subtle layout shift on mobile */}
-              <div
+              {/* <div
                 className="portfolio-info-item absolute -top-8 right-0 md:-right-[20px] text-[100px] md:text-[140px] font-[100] text-[#CCCCCC] opacity-[0.4] leading-none select-none pointer-events-none z-0"
                 style={{ WebkitTextStroke: "1px #CCCCCC", color: "transparent" }}
                 data-scroll
                 data-scroll-speed="0.1"
               >
                 01
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -169,7 +169,7 @@ const PortfolioSection = () => {
                 data-scroll-speed="0.02"
               >
                 <Image
-                  src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1000&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW50ZXJpb3IlMjBkZXNpZ258ZW58MHwyfDB8fHww"
                   alt="Sauna Hero"
                   fill
                   className="object-cover object-center"
@@ -182,7 +182,7 @@ const PortfolioSection = () => {
                 data-scroll-speed="0.04"
               >
                 <Image
-                  src="https://images.unsplash.com/photo-1621293954908-d81149e01e40?q=80&w=1000&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1615874694520-474822394e73?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aW50ZXJpb3IlMjBkZXNpZ258ZW58MHwyfDB8fHww"
                   alt="Sauna Detail 1"
                   fill
                   className="object-cover object-center"
@@ -195,7 +195,7 @@ const PortfolioSection = () => {
                 data-scroll-speed="0.06"
               >
                 <Image
-                  src="https://images.unsplash.com/photo-1515233157545-22af0c0344d9?q=80&w=1000&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aW50ZXJpb3IlMjBkZXNpZ258ZW58MHwyfDB8fHww"
                   alt="Sauna Detail 2"
                   fill
                   className="object-cover object-center"
@@ -208,7 +208,7 @@ const PortfolioSection = () => {
                 data-scroll-speed="0.03"
               >
                 <Image
-                  src="https://images.unsplash.com/photo-1629910276241-98c4d832113f?q=80&w=1000&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1616486701797-0f33f61038ec?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGludGVyaW9yJTIwZGVzaWdufGVufDB8MnwwfHx8MA%3D%3D"
                   alt="Sauna Detail 3"
                   fill
                   className="object-cover object-center"
@@ -221,7 +221,7 @@ const PortfolioSection = () => {
                 data-scroll-speed="0.05"
               >
                 <Image
-                  src="https://images.unsplash.com/photo-1615873968403-89e068628260?q=80&w=1000&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1615971677499-5467cbab01c0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGludGVyaW9yJTIwZGVzaWdufGVufDB8MnwwfHx8MA%3D%3D"
                   alt="Sauna Detail 4"
                   fill
                   className="object-cover object-center"
@@ -234,7 +234,7 @@ const PortfolioSection = () => {
                 data-scroll-speed="0.07"
               >
                 <Image
-                  src="https://images.unsplash.com/photo-1553051021-9f94520a6cad?q=80&w=1000&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1721630175454-0ca4517bb530?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGludGVyaW9yJTIwZGVzaWdufGVufDB8MnwwfHx8MA%3D%3D"
                   alt="Sauna Detail 5"
                   fill
                   className="object-cover object-center"

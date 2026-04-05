@@ -13,7 +13,7 @@ const services = [
   },
   {
     text: "A well-established system of managing all stages of work makes it possible to meet deadlines and complete the interior design without you. We visit the site, monitor the similarity between the design project and the actual situation, and control the correspondence to the colour scheme.",
-    img: "https://images.unsplash.com/photo-1583847268964-b28ce8f89f20?q=80&w=1000&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1537726235470-8504e3beef77?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGludGVyaW9yJTIwZGVzaWdufGVufDB8MHwwfHx8MA%3D%3D",
     reverse: true
   },
   {

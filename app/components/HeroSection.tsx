@@ -84,10 +84,10 @@ export default function HeroSection() {
     >
 
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-x-0 inset-y-[-20%] w-full h-[140%] z-0 placeholder-hero-bg"
-        data-scroll 
-        data-scroll-speed="-0.3" 
+        data-scroll
+        data-scroll-speed="-0.3"
       >
         <Image
           src={Hero}
@@ -120,9 +120,9 @@ export default function HeroSection() {
         </div>
         <div className="flex items-center gap-4 nav-item">
           <span className="hidden md:block text-white text-[12px] md:text-[14px] font-medium tracking-[0.02em] font-[family-name:var(--font-montserrat)]">
-            +38 (095) 459 11 22
+            +91 9988665544
           </span>
-          <button 
+          <button
             onClick={() => setMobileNavOpen(true)}
             className="md:hidden flex flex-col justify-center items-end w-8 h-8 gap-1.5 z-50 opacity-80 hover:opacity-100"
           >
@@ -133,12 +133,11 @@ export default function HeroSection() {
       </nav>
 
       {/* Mobile Side Navbar Drawer */}
-      <div 
-        className={`fixed inset-0 z-[60] bg-[#1a1a1a] transition-transform duration-[600ms] ease-[cubic-bezier(0.76,0,0.24,1)] flex flex-col justify-center items-center ${
-          mobileNavOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+      <div
+        className={`fixed inset-0 z-[60] bg-[#1a1a1a] transition-transform duration-[600ms] ease-[cubic-bezier(0.76,0,0.24,1)] flex flex-col justify-center items-center ${mobileNavOpen ? "translate-x-0" : "translate-x-full"
+          }`}
       >
-        <button 
+        <button
           onClick={() => setMobileNavOpen(false)}
           className="absolute top-6 right-6 w-10 h-10 flex text-white opacity-60 hover:opacity-100 transition-opacity justify-center items-center"
         >
@@ -146,12 +145,12 @@ export default function HeroSection() {
             <path d="M18 6L6 18M6 6l12 12" />
           </svg>
         </button>
-        
+
         <div className="flex flex-col gap-10 text-center font-[family-name:var(--font-montserrat)]">
           {['HOMEPAGE', 'SERVICES', 'ABOUT US', 'PORTFOLIO', 'CONTACTS'].map(n => (
-            <a 
-              key={n} 
-              href="#" 
+            <a
+              key={n}
+              href="#"
               onClick={() => setMobileNavOpen(false)}
               className="text-white text-[24px] font-extralight tracking-[0.2em] uppercase hover:text-[#C9A84C] hover:scale-105 transition-all duration-300"
             >
@@ -164,7 +163,7 @@ export default function HeroSection() {
       {/* Mega Wordmark */}
       <h1
         className="absolute left-6 md:left-[60px] text-white z-10 select-none font-[family-name:var(--font-montserrat)] hero-title"
-        data-scroll 
+        data-scroll
         data-scroll-speed="0.2"
         style={{
           top: '28%',
@@ -180,7 +179,7 @@ export default function HeroSection() {
       {/* Subheadline */}
       <p
         className="absolute left-6 md:left-[60px] text-white mt-10 md:mt-0 font-normal uppercase tracking-[0.04em] leading-[1.25] z-10 font-[family-name:var(--font-montserrat)] hero-subtitle"
-        data-scroll 
+        data-scroll
         data-scroll-speed="0.1"
         style={{ top: '65%', fontSize: 'clamp(16px, 2.2vw, 30px)' }}>
         CREATING INTERIORS<br />THAT INSPIRE
@@ -189,7 +188,7 @@ export default function HeroSection() {
       {/* CTA Button */}
       <a
         href="#estimate"
-        data-scroll 
+        data-scroll
         data-scroll-speed="0.15"
         className="absolute left-6 md:left-[60px] z-10 flex items-center justify-center rounded-br-4xl text-white text-[10px] md:text-[12px] font-bold tracking-[0.12em] uppercase px-6 py-4 md:px-[40px] md:py-[20px] transition-colors duration-200 font-[family-name:var(--font-montserrat)] rounded-[2px] cta-button"
         style={{ bottom: '8%', backgroundColor: '#C9A84C' }}
@@ -201,7 +200,7 @@ export default function HeroSection() {
       {/* Right Column — Service Tags */}
       <div
         className="hidden md:block absolute right-[60px] text-right z-10 font-[family-name:var(--font-montserrat)]"
-        data-scroll 
+        data-scroll
         data-scroll-speed="0.1"
         style={{ top: '170px' }}>
         {['APARTMENTS', 'HOUSES', 'ESTABLISHMENTS'].map(s => (
@@ -212,7 +211,7 @@ export default function HeroSection() {
       {/* Script Label */}
       <p
         className="hidden md:block absolute right-[60px] text-white z-10 italic font-[family-name:var(--font-dancing-script)] hero-script"
-        data-scroll 
+        data-scroll
         data-scroll-speed="0.15"
         style={{
           top: '52%',

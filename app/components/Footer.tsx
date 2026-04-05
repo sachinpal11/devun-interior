@@ -108,10 +108,10 @@ const Footer = () => {
   return (
     <footer
       ref={footerRef}
-      className="relative w-full min-h-screen md:min-h-[1100px] lg:h-[120vh] overflow-hidden font-[family-name:var(--font-inter)] antialiased select-none bg-[#1A1A1A] py-20 lg:py-0"
+      className="relative w-full min-h-screen md:h-[1200px] lg:h-[110vh] overflow-hidden font-[family-name:var(--font-inter)] antialiased select-none bg-[#1A1A1A] pt-20"
     >
       {/* BACKGROUND IMAGE - PARALLAX */}
-      <div className="absolute inset-0 z-0 h-[140%] -top-[20%]" data-scroll data-scroll-speed="-1.5">
+      <div className="absolute inset-0 z-0 h-[140%] -top-[20%]">
         <Image
           src="https://images.unsplash.com/photo-1606744824163-985d376605aa?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Luxury Interior Footer Background"
@@ -134,12 +134,12 @@ const Footer = () => {
 
           {/* CLUSTER B — RIGHT DOMINANT CTA */}
           <div className="lg:absolute lg:top-[90px] lg:right-[64px] flex flex-col items-start lg:items-end text-left lg:text-right text-[#FFFFFF] w-full lg:w-auto">
-            <h2 className="footer-headline text-[clamp(48px,11vw,145px)] font-[400] tracking-[-0.02em] leading-[0.92] uppercase">
+            <h2 className="footer-headline text-[clamp(22px,5vw,145px)] font-[400] tracking-[-0.02em] leading-[0.92] uppercase">
               CREATING<br />A COZY<br />INTERIOR
             </h2>
             <div className="mt-8 md:mt-[48px] flex flex-col items-start lg:items-end w-full">
-              <span className="footer-cta-action text-[clamp(32px,6vw,92px)] font-[400] tracking-[0.01em] leading-[1.1]">
-                +38 (095) 459 11 22
+              <span className="footer-cta-action text-[clamp(12px,4vw,92px)] font-[400] tracking-[0.01em] leading-[1.1]">
+                +91 9988665544
               </span>
               <button
                 className="footer-cta-action mt-8 md:mt-[44px] rounded-br-4xl w-full sm:w-[280px] h-[64px] bg-[#D4B96A] text-[#1A1A1A] text-[14px] font-[600] uppercase tracking-[0.15em] flex items-center justify-center transition-transform hover:scale-[1.02] active:scale-[0.98]"
