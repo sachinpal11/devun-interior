@@ -142,24 +142,24 @@ const AboutSection = () => {
   return (
     <section
       ref={containerRef}
-      className="relative w-full bg-[#FFFFFF] py-12 pb-24 overflow-hidden font-[family-name:var(--font-montserrat)] antialiased"
+      className="relative w-full bg-[#FFFFFF] py-12 md:py-24 pb-24 overflow-hidden font-[family-name:var(--font-montserrat)] antialiased"
     >
       {/* Hero Headline Block */}
-      <div className="relative w-full px-20 pt-12 pb-0">
+      <div className="relative w-full px-6 md:px-20 pt-12 pb-0">
         {/* Micro Label */}
-        <div className="about-label absolute top-12 left-20 flex flex-col text-[#0B0B0B] text-[11px] font-normal uppercase tracking-[0.06em] leading-[1.5]">
+        <div className="about-label absolute top-4 md:top-12 left-6 md:left-20 flex flex-col text-[#0B0B0B] text-[10px] md:text-[11px] font-normal uppercase tracking-[0.06em] leading-[1.5] z-10">
           <span>LEARN MORE</span>
           <span>ABOUT THE</span>
           <span>COMPANY</span>
         </div>
 
         {/* Headline */}
-        <div className="about-headline-container flex flex-col items-center justify-center w-full">
+        <div className="about-headline-container flex flex-col items-center justify-center w-full mt-10 md:mt-0">
           <div className="flex flex-col font-[400]">
-            <h2 className="about-headline text-[#0B0B0B] font-medium text-[clamp(80px,10vw,118px)] leading-[0.9] tracking-[-0.03em] uppercase">
+            <h2 className="about-headline text-[#0B0B0B] font-medium text-[clamp(48px,12vw,118px)] leading-[0.9] tracking-[-0.03em] uppercase">
               ABOUT
             </h2>
-            <h2 className="about-headline text-[#6B3F2A] text-[clamp(80px,10vw,118px)] font-medium leading-[0.9] tracking-[-0.03em] uppercase pl-[80px]">
+            <h2 className="about-headline text-[#6B3F2A] text-[clamp(48px,12vw,118px)] font-medium leading-[0.9] tracking-[-0.03em] uppercase pl-[40px] md:pl-[80px]">
               COMPANY
             </h2>
           </div>
@@ -167,12 +167,12 @@ const AboutSection = () => {
       </div>
 
       {/* 2-Column Content Block */}
-      <div className="flex flex-row w-full px-20 gap-[60px] mt-12 items-start">
-        {/* Left Column */}
-        <div className="relative w-[54%]">
-          {/* Decorative Outlined SVG */}
+      <div className="flex flex-col md:flex-row w-full px-6 md:px-20 gap-10 md:gap-[60px] mt-12 md:mt-20 items-start">
+        {/* Left Column - Photo Stack */}
+        <div className="relative w-full md:w-[54%]">
+          {/* Decorative Outlined SVG - Hidden on mobile, scaled on desktop */}
           <div
-            className="about-svg absolute -left-10 top-20 w-[280px] h-[600px] z-0 pointer-events-none"
+            className="about-svg absolute -left-10 top-20 w-[200px] md:w-[280px] h-[400px] md:h-[600px] z-0 pointer-events-none hidden md:block"
             data-scroll
             data-scroll-speed="-0.05"
           >
@@ -203,8 +203,8 @@ const AboutSection = () => {
             </svg>
           </div>
 
-          {/* Connector Lines */}
-          <div className="absolute left-[165px] top-0 bottom-0 z-1 pointer-events-none">
+          {/* Connector Lines - Hidden on mobile */}
+          <div className="hidden md:absolute left-[165px] top-0 bottom-0 z-1 pointer-events-none">
             {/* Vertical Line */}
             <div className="about-connector absolute top-0 bottom-7 w-[1px] bg-[#C8B89A]" />
             {/* Short Horizontal Line at Top */}
@@ -212,17 +212,17 @@ const AboutSection = () => {
           </div>
 
           {/* Three Framed Photo Items */}
-          <div className="about-photo-stack flex flex-col ml-[160px] z-[2] relative">
+          <div className="about-photo-stack flex flex-col md:ml-[160px] z-[2] relative items-center md:items-start">
             {unsplashImages.map((url, idx) => (
               <div
                 key={idx}
-                className="about-photo-item relative mb-7 w-[320px] h-[240px]"
+                className="about-photo-item relative mb-12 md:mb-7 w-full max-w-[320px] aspect-[4/3] md:h-[240px]"
                 data-scroll
                 data-scroll-speed={0.02 * (idx + 1)}
               >
                 {/* Frame Border */}
                 <div
-                  className="absolute inset-[-12px] border border-[#C8B89A] bg-transparent z-0 rounded-[0px]"
+                  className="absolute inset-[-8px] md:inset-[-12px] border border-[#C8B89A] bg-transparent z-0 rounded-[0px]"
                   data-scroll
                   data-scroll-speed="-0.02"
                 />
@@ -240,20 +240,20 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* Right Column */}
-        <div className="flex flex-col w-[46%] gap-[72px] pt-5">
+        {/* Right Column - Stats */}
+        <div className="flex flex-col w-full md:w-[46%] gap-12 md:gap-[72px] pt-5">
           {/* Stat 1 */}
           <div className="about-stat-item flex flex-col">
-            <span className="stat-number text-[#0B0B0B] font-bold text-[clamp(64px,7vw,84px)] font-black tracking-[-0.02em]">
+            <span className="stat-number text-[#0B0B0B] font-bold text-[clamp(48px,8vw,84px)] font-black tracking-[-0.02em]">
               45+
             </span>
             <div className="stat-title-row flex justify-between items-center w-full">
-              <h3 className="text-[#0B0B0B] text-[24px] font-bold uppercase tracking-[0.06em]">
+              <h3 className="text-[#0B0B0B] text-[20px] md:text-[24px] font-bold uppercase tracking-[0.06em]">
                 DESIGN PROJECTS
               </h3>
-              <span className="text-[24px] text-[#C8B89A]">—</span>
+              <span className="text-[20px] md:text-[24px] text-[#C8B89A]">—</span>
             </div>
-            <p className="stat-para text-[#1E1E1E] text-[14px] font-normal leading-[1.65] max-w-[400px] mt-4 text-left">
+            <p className="stat-para text-[#1E1E1E] text-[14px] font-normal leading-[1.65] max-w-full md:max-w-[400px] mt-4 text-left">
               prove that owners of large commercial facilities, owners of houses
               and apartments are willing to work with us. We are happy to
               provide you with samples of real projects.
@@ -262,16 +262,16 @@ const AboutSection = () => {
 
           {/* Stat 2 */}
           <div className="about-stat-item flex flex-col">
-            <span className="stat-number text-[#0B0B0B] font-bold text-[clamp(64px,7vw,84px)] font-black tracking-[-0.02em]">
+            <span className="stat-number text-[#0B0B0B] font-bold text-[clamp(48px,8vw,84px)] font-black tracking-[-0.02em]">
               20+
             </span>
             <div className="stat-title-row flex justify-between items-center w-full">
-              <h3 className="text-[#0B0B0B] text-[24px] font-bold uppercase tracking-[0.06em]">
+              <h3 className="text-[#0B0B0B] text-[20px] md:text-[24px] font-bold uppercase tracking-[0.06em]">
                 EMPLOYEES
               </h3>
-              <span className="text-[24px] text-[#C8B89A]">—</span>
+              <span className="text-[20px] md:text-[24px] text-[#C8B89A]">—</span>
             </div>
-            <p className="stat-para text-[#1E1E1E] text-[14px] font-normal leading-[1.65] max-w-[400px] mt-4 text-left">
+            <p className="stat-para text-[#1E1E1E] text-[14px] font-normal leading-[1.65] max-w-full md:max-w-[400px] mt-4 text-left">
               are always ready to answer your questions and save you time spent
               on repairs and searching for interior design references.
             </p>
@@ -279,16 +279,16 @@ const AboutSection = () => {
 
           {/* Stat 3 */}
           <div className="about-stat-item flex flex-col">
-            <span className="stat-number text-[#0B0B0B] font-bold text-[clamp(64px,7vw,84px)] font-black tracking-[-0.02em]">
+            <span className="stat-number text-[#0B0B0B] font-bold text-[clamp(48px,8vw,84px)] font-black tracking-[-0.02em]">
               100+
             </span>
             <div className="stat-title-row flex justify-between items-center w-full">
-              <h3 className="text-[#0B0B0B] text-[24px] font-bold uppercase tracking-[0.06em]">
+              <h3 className="text-[#0B0B0B] text-[20px] md:text-[24px] font-bold uppercase tracking-[0.06em]">
                 CONTRACTORS
               </h3>
-              <span className="text-[24px] text-[#C8B89A]">—</span>
+              <span className="text-[20px] md:text-[24px] text-[#C8B89A]">—</span>
             </div>
-            <p className="stat-para text-[#1E1E1E] text-[14px] font-normal leading-[1.65] max-w-[400px] mt-4 text-left">
+            <p className="stat-para text-[#1E1E1E] text-[14px] font-normal leading-[1.65] max-w-full md:max-w-[400px] mt-4 text-left">
               guarantee on-time completion of assigned tasks, personal support
               and thorough control of interior design at all stages.
             </p>
